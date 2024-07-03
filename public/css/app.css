@@ -11997,7 +11997,7 @@ nav .btn1:hover {
   color: white;
 }
 
-.event-section {
+.event-section-top {
   background-image: url(../img/events-bg.jpg);
   background-position: center;
   background-size: cover;
@@ -12008,11 +12008,11 @@ nav .btn1:hover {
   color: white;
   padding: 10vh 0;
 }
-.event-section h2, .event-section .h2 {
+.event-section-top h2, .event-section-top .h2 {
   text-align: center;
   font-family: satisfy;
 }
-.event-section h2 span, .event-section .h2 span {
+.event-section-top h2 span, .event-section-top .h2 span {
   color: rgb(255, 176, 59);
   font-family: satisfy;
 }
@@ -12020,6 +12020,60 @@ nav .btn1:hover {
 .left-side h3, .left-side .h3 {
   color: rgb(255, 176, 59);
   font-family: satisfy;
+}
+
+.form-section h1, .form-section .h1 {
+  text-align: center;
+  font-family: satisfy;
+}
+.form-section h1 span, .form-section .h1 span {
+  font-family: satisfy;
+  color: rgb(255, 160, 18);
+}
+.form-section p {
+  text-align: center;
+}
+
+.form {
+  padding: 3vh 4vw;
+}
+.form form {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  padding: 4vh 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+.form .first-inputs {
+  display: flex;
+  gap: 2vw;
+}
+.form .first-inputs input {
+  width: 30vw;
+  padding: 7px 7px;
+}
+.form .first-inputs input:focus {
+  border: 1px solid blue;
+}
+.form .first-inputs input::placeholder {
+  color: black;
+}
+.form textarea {
+  padding: 4vh 1vw;
+  width: 100%;
+}
+.form .btn4 {
+  width: 12vw;
+  text-align: center;
+  margin: auto;
+  background-color: rgb(255, 176, 59);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 7px 0;
+}
+.form .btn4:hover {
+  background-color: rgb(255, 160, 18);
 }
 
 /*# sourceMappingURL=app.css.map */
