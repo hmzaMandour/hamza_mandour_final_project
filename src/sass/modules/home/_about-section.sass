@@ -30,14 +30,21 @@
         box-shadow: 0 4px 8px 0 rgb(0, 0, 0 , 0.19)  
         padding: 60px 40px
         overflow: hidden
-        transition: 0.2s
+        position: relative
+        .hoverr
+              width: 100%
+              transition: 0.2s
+              overflow: hidden
+              position: relative
+              &:hover
+                background-color: rgb(255, 176, 59)
+                color: white
+                transform: scale(1.083)
+                h3
+                    color: white
         h2
-           font-family: satisfy 
+            font-family: satisfy 
         h3
             color: rgb(255, 176, 59)
             font-weight: 800
-        &:hover
-            background-color: rgb(255, 176, 59)
-            color: white
-            h3
-                color: white
+      

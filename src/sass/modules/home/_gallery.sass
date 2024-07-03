@@ -1,0 +1,32 @@
+#gallery
+    h1
+        text-align: center
+        font-family: satisfy
+        span
+            font-family: satisfy
+            color: rgb(255, 176, 59)
+    p
+        text-align: center
+    
+    
+.gallerys
+    display: flex
+    flex-direction: column
+    gap: 0.5vw
+    .gallery-top
+        display: flex
+        gap: 0.5vw
+        padding: 0 1vw
+        overflow: hidden
+        position: relative
+        .gallery-img
+            width: 24vw
+            overflow: hidden
+            position: relative
+            transition: 0.2s
+
+        img
+            width: 100%
+            transition: 0.2s
+            &:hover
+               transform: scale(1.07)

@@ -11980,7 +11980,21 @@ nav .btn1:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19);
   padding: 60px 40px;
   overflow: hidden;
+  position: relative;
+}
+.inside-section2 .hover .hoverr {
+  width: 100%;
   transition: 0.2s;
+  overflow: hidden;
+  position: relative;
+}
+.inside-section2 .hover .hoverr:hover {
+  background-color: rgb(255, 176, 59);
+  color: white;
+  transform: scale(1.083);
+}
+.inside-section2 .hover .hoverr:hover h3, .inside-section2 .hover .hoverr:hover .h3 {
+  color: white;
 }
 .inside-section2 .hover h2, .inside-section2 .hover .h2 {
   font-family: satisfy;
@@ -11988,13 +12002,6 @@ nav .btn1:hover {
 .inside-section2 .hover h3, .inside-section2 .hover .h3 {
   color: rgb(255, 176, 59);
   font-weight: 800;
-}
-.inside-section2 .hover:hover {
-  background-color: rgb(255, 176, 59);
-  color: white;
-}
-.inside-section2 .hover:hover h3, .inside-section2 .hover:hover .h3 {
-  color: white;
 }
 
 .event-section-top {
@@ -12050,6 +12057,7 @@ nav .btn1:hover {
 }
 .form .first-inputs input {
   width: 30vw;
+  border: 1px solid rgb(222, 226, 230);
   padding: 7px 7px;
 }
 .form .first-inputs input:focus {
@@ -12061,6 +12069,7 @@ nav .btn1:hover {
 .form textarea {
   padding: 4vh 1vw;
   width: 100%;
+  border: 1px solid rgb(222, 226, 230);
 }
 .form .btn4 {
   width: 12vw;
@@ -12074,6 +12083,44 @@ nav .btn1:hover {
 }
 .form .btn4:hover {
   background-color: rgb(255, 160, 18);
+}
+
+#gallery h1, #gallery .h1 {
+  text-align: center;
+  font-family: satisfy;
+}
+#gallery h1 span, #gallery .h1 span {
+  font-family: satisfy;
+  color: rgb(255, 176, 59);
+}
+#gallery p {
+  text-align: center;
+}
+
+.gallerys {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+.gallerys .gallery-top {
+  display: flex;
+  gap: 0.5vw;
+  padding: 0 1vw;
+  overflow: hidden;
+  position: relative;
+}
+.gallerys .gallery-top .gallery-img {
+  width: 24vw;
+  overflow: hidden;
+  position: relative;
+  transition: 0.2s;
+}
+.gallerys .gallery-top img {
+  width: 100%;
+  transition: 0.2s;
+}
+.gallerys .gallery-top img:hover {
+  transform: scale(1.07);
 }
 
 /*# sourceMappingURL=app.css.map */
