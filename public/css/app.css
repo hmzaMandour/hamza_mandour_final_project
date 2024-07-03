@@ -11851,6 +11851,12 @@ textarea.form-control-lg {
   font-family: sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+}
+
 @font-face {
   font-family: satisfy;
   src: url(../fonts/Satisfy-Regular.ttf);
@@ -11860,7 +11866,7 @@ nav {
   background-color: rgba(1, 1, 1, 0.319);
   align-items: center;
   justify-content: space-between;
-  padding: 4vh 4vw;
+  padding: 2vh 4vw;
 }
 nav h2, nav .h2 {
   font-family: satisfy;
@@ -11911,6 +11917,11 @@ nav .btn1:hover {
   color: rgb(255, 176, 59);
   font-family: satisfy;
 }
+.first-section .buttons {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
 .first-section .btn2 {
   background-color: transparent;
   color: white;
@@ -11935,9 +11946,8 @@ nav .btn1:hover {
 .about-section1 {
   background-color: rgb(255, 250, 243);
   display: flex;
-  align-items: center;
   padding: 3vh 0;
-  gap: 6vw;
+  gap: 4vw;
 }
 .about-section1 .left-side h2, .about-section1 .left-side .h2 {
   font-family: satisfy;
@@ -11966,9 +11976,10 @@ nav .btn1:hover {
   padding-inline: 4vw;
 }
 .inside-section2 .hover {
+  width: 33vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19);
-  padding-top: 60px;
-  padding-inline: 4vw;
+  padding: 60px 40px;
+  overflow: hidden;
   transition: 0.2s;
 }
 .inside-section2 .hover h2, .inside-section2 .hover .h2 {
@@ -11980,12 +11991,35 @@ nav .btn1:hover {
 }
 .inside-section2 .hover:hover {
   background-color: rgb(255, 176, 59);
-  padding-top: 40px;
-  padding-bottom: 20px;
   color: white;
 }
 .inside-section2 .hover:hover h3, .inside-section2 .hover:hover .h3 {
   color: white;
+}
+
+.event-section {
+  background-image: url(../img/events-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  color: white;
+  padding: 10vh 0;
+}
+.event-section h2, .event-section .h2 {
+  text-align: center;
+  font-family: satisfy;
+}
+.event-section h2 span, .event-section .h2 span {
+  color: rgb(255, 176, 59);
+  font-family: satisfy;
+}
+
+.left-side h3, .left-side .h3 {
+  color: rgb(255, 176, 59);
+  font-family: satisfy;
 }
 
 /*# sourceMappingURL=app.css.map */
