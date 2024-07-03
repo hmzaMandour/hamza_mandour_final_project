@@ -1,85 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/css/app.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/app.css" />
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <nav class="fixed-top">
-            <img  src="./public/img/logo-removebg-preview.png" alt="">
-            <div class="links-button">
-                <div class="links">
-                    <a class="a1 " href="">Home</a>
-                    <a class="a1" href="">About</a>
-                    <a class="a1" href="">Menu</a>
-                    <a class="a1" href="">Specials</a>
-                    <a class="a1" href="">Events</a>
-                    <a class="a1" href="">Chefs</a>
-                    <a class="a1" href="">Gallery</a>
-                    <a class="a1" href="">Drop Down</a>
-                    <a class="a1" href="">Contact</a>
-                </div >
-                <button class="btn1"> Book a table</button>
-            </div>
-
-        </nav>
-
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./public/img/slide/slide-1.jpg" class="d-block w-100 " alt="...">
-                <div class="first-section card-img-overlay text-white">
-                  <h1 >Delicious, ipsum dolor.</h1>
-                  <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quis laboriosam aspernatur mollitia <br> adipisci numquam, voluptatum  laborum nesciunt nostrum consequuntur voluptatum <br> laborum nesciunt nostrum consequuntur?</p>
-              <div>
-                      <button class="btn2">Open menu</button>
-                      <button class="btn3">Book a table</button>
-              </div>
-              </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./public/img/slide/slide-2.jpg" class="d-block w-100 opacity-75" alt="...">
-                <div class="first-section card-img-overlay text-white">
-                  <h1>seque ea, ipsum dolor.</h1>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quis laboriosam aspernatur mollitia <br> adipisci numquam, voluptatum  laborum nesciunt nostrum consequuntur voluptatum <br> laborum nesciunt nostrum consequuntur?</p>
-              <div>
-                      <button class="btn2">Open menu</button>
-                      <button class="btn3">Book a table</button>
-              </div>
-              </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./public/img/slide/slide-3.jpg" class="d-block w-100 opacity-75" alt="...">
-                <div class="first-section card-img-overlay text-white">
-                  <h1>lorem, ipsum dolor.</h1>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quis laboriosam aspernatur mollitia <br> adipisci numquam, voluptatum  laborum nesciunt nostrum consequuntur voluptatum <br> laborum nesciunt nostrum consequuntur?</p>
-              <div>
-                      <button class="btn2">Open menu</button>
-                      <button class="btn3">Book a table</button>
-              </div>
-              </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+      <nav class="fixed-top">
+        <img src="./public/img/logo-removebg-preview.png" alt="" />
+        <div class="links-button">
+          <div class="links">
+            <a class="a1" href="">Home</a>
+            <a class="a1" href="#about">About</a>
+            <a class="a1" href="">Menu</a>
+            <a class="a1" href="">Specials</a>
+            <a class="a1" href="">Events</a>
+            <a class="a1" href="">Chefs</a>
+            <a class="a1" href="">Gallery</a>
+            <a class="a1" href="">Drop Down</a>
+            <a class="a1" href="">Contact</a>
           </div>
+          <button class="btn1">Book a table</button>
+        </div>
+      </nav>
 
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./public/img/slide/slide-1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="first-section card-img-overlay text-white">
+              <h1><span>Delicious</span> Restaurant</h1>
+              <p>
+                Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et
+                est quaerat <br />
+                sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
+                Similique ea <br />
+                voluptatem. Esse doloremque accusamus repellendus deleniti vel.
+                Minus et <br />
+                tempore modi architecto.
+              </p>
+              <div>
+                <button class="btn2">Open menu</button>
+                <button class="btn3">Book a table</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./public/img/slide/slide-2.jpg"
+              class="d-block w-100 opacity-75"
+              alt="..."
+            />
+            <div class="first-section card-img-overlay text-white">
+              <h1>Lorem Ipsum Dolor</h1>
+              <p>
+                Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et
+                est quaerat <br />
+                sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
+                Similique ea <br />
+                voluptatem. Esse doloremque accusamus repellendus deleniti vel.
+                Minus et <br />
+                tempore modi architecto
+              </p>
+              <div>
+                <button class="btn2">Open menu</button>
+                <button class="btn3">Book a table</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./public/img/slide/slide-3.jpg"
+              class="d-block w-100 opacity-75"
+              alt="..."
+            />
+            <div class="first-section card-img-overlay text-white">
+              <h1>Sequi ea ut et est quaerat</h1>
+              <p>
+                Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et
+                est quaerat <br />
+                sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
+                Similique ea <br />
+                voluptatem. Esse doloremque accusamus repellendus deleniti vel.
+                Minus et <br />
+                tempore modi architecto
+              </p>
+              <div>
+                <button class="btn2">Open menu</button>
+                <button class="btn3">Book a table</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </header>
+
+    <div id="about">
+      <div class="about-section1">
+        <video width="600" controls poster="./public/img/about.jpg">
+          <source
+            src="./public/videos/Nature Beautiful short video 720p HD (1).mp4"
+          />
+        </video>
+
+        <div>
+          <h2>
+            Eum ipsam laborum deleniti velit pariatur architecto aut nihil
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+            aute irure dolor in reprehenderit
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+          <div class="icon-para">
+            <i class="bi bi-check-all"></i>
+            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="icon-para">
+            <i class="bi bi-check-all"></i>
+            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="icon-para">
+            <i class="bi bi-check-all"></i>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate trideta storacalaperda
+              mastiro dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum
+          </p>
+        </div>
+      </div>
+      <div class="about-section2">
+        <div class="d-flex align-items-center flex-column justify-content-center title-section2 ">
+          <h2>Why choose <span>Our Restaurant</span> </h2>
+          <p class="text-center">
+            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est <br>
+            adipisci expedita at voluptas atque vitae autem.
+          </p>
+        </div>
+        <div class="inside-section2">
+          <div class="  hover">
+            <h3>01</h3>
+            <h2>Lorem Ipsum</h2>
+            <p>
+              Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et
+              consectetur ducimus vero placeat
+            </p>
+          </div>
+          <div class="  hover">
+            <h3>02</h3>
+            <h2>Lorem Ipsum</h2>
+            <p>
+              Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et
+              consectetur ducimus vero placeat
+            </p>
+          </div>
+          <div class="  hover">
+            <h3>03</h3>
+            <h2>Lorem Ipsum</h2>
+            <p>
+              Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et
+              consectetur ducimus vero placeat
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-</body>
+  </body>
 </html>

@@ -11856,7 +11856,7 @@ nav {
   background-color: transparent;
   align-items: center;
   justify-content: space-between;
-  padding: 5vh 4vw;
+  padding: 4vh 4vw;
 }
 nav .links-button {
   display: flex;
@@ -11895,6 +11895,9 @@ nav .btn1:hover {
 .first-section p {
   text-align: center;
 }
+.first-section h1 span, .first-section .h1 span {
+  color: rgb(255, 176, 59);
+}
 .first-section .btn2 {
   background-color: transparent;
   color: white;
@@ -11914,6 +11917,52 @@ nav .btn1:hover {
 }
 .first-section .btn3:hover {
   background-color: rgb(255, 176, 59);
+}
+
+.about-section1 {
+  background-color: rgb(255, 250, 243);
+  display: flex;
+  align-items: center;
+  padding: 3vh 0;
+  gap: 6vw;
+}
+
+.icon-para {
+  display: flex;
+  gap: 1vw;
+}
+.icon-para i {
+  color: rgb(255, 160, 18);
+}
+
+.about-section2 div h2 span, .about-section2 div .h2 span {
+  color: rgb(255, 176, 59);
+}
+
+.inside-section2 {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  padding-inline: 4vw;
+}
+.inside-section2 .hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 60px;
+  padding-inline: 4vw;
+  transition: 0.2s;
+}
+.inside-section2 .hover h3, .inside-section2 .hover .h3 {
+  color: rgb(255, 176, 59);
+  font-weight: 800;
+}
+.inside-section2 .hover:hover {
+  background-color: rgb(255, 176, 59);
+  padding-top: 40px;
+  padding-bottom: 20px;
+  color: white;
+}
+.inside-section2 .hover:hover h3, .inside-section2 .hover:hover .h3 {
+  color: white;
 }
 
 /*# sourceMappingURL=app.css.map */
