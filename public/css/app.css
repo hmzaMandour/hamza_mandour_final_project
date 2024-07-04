@@ -12233,4 +12233,44 @@ nav .btn1:hover {
   color: rgb(89, 92, 95);
 }
 
+footer {
+  background-color: rgb(53, 50, 45);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+  padding: 7vh;
+}
+footer h2, footer .h2 {
+  color: rgb(255, 176, 59);
+  font-family: satisfy;
+  font-weight: 600;
+  font-size: 35px;
+  cursor: pointer;
+}
+footer .footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+footer .footer-icons i {
+  font-size: 20px;
+  background-color: rgb(91, 86, 77);
+  border-radius: 50%;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+footer .footer-icons i:hover {
+  background-color: rgb(255, 176, 59);
+}
+footer p {
+  text-align: center;
+  padding-top: 10px;
+}
+footer p span {
+  color: rgb(255, 176, 59);
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=app.css.map */
