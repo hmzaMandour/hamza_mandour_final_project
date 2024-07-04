@@ -32,6 +32,10 @@ nav
                 color: white
                 &:hover
                     color: orange
+        label
+            i
+                color: white
+                font-size: 25px
     .btn1
         background-color: rgb(255, 176, 59)
         color: white
@@ -76,6 +80,10 @@ nav
         border: 2px solid rgb(255, 160, 18)
         &:hover
             background-color: rgb(255, 176, 59)
+#check
+    display: none
+.menu , .close
+    display: none
 
 
 @media  ( max-width: 430px )
@@ -83,11 +91,35 @@ nav
         .links-button
             .links
                 display: none
+                position: fixed
+                top: 10%
+                left: 5%
+                right: 5%
+                bottom: 2%
+                flex-direction: column
+                gap: 3vh
+                border-radius: 10px
+                background-color: white
+                justify-content: start
+                align-items: start
+                padding: 5vh 0 5vh 5vw
+                .a1
+                    color: black
+            .menu
+                display: flex
+            #check:checked ~ .links
+                display: flex
+            #check:checked ~ .close
+                display: flex
+            #check:checked ~ .menu
+                display: none
+          
+              
     header
         img
             height: 100vh
     .first-section
         p
-            width: 70vw
+            width: 80vw
  
     

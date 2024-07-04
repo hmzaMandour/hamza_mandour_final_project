@@ -11884,6 +11884,10 @@ nav .links-button .links .a1 {
 nav .links-button .links .a1:hover {
   color: orange;
 }
+nav .links-button label i {
+  color: white;
+  font-size: 25px;
+}
 nav .btn1 {
   background-color: rgb(255, 176, 59);
   color: white;
@@ -11939,15 +11943,50 @@ nav .btn1:hover {
   background-color: rgb(255, 176, 59);
 }
 
+#check {
+  display: none;
+}
+
+.menu, .close {
+  display: none;
+}
+
 @media (max-width: 430px) {
   nav .links-button .links {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    bottom: 2%;
+    flex-direction: column;
+    gap: 3vh;
+    border-radius: 10px;
+    background-color: white;
+    justify-content: start;
+    align-items: start;
+    padding: 5vh 0 5vh 5vw;
+  }
+  nav .links-button .links .a1 {
+    color: black;
+  }
+  nav .links-button .menu {
+    display: flex;
+  }
+  nav .links-button #check:checked ~ .links {
+    display: flex;
+  }
+  nav .links-button #check:checked ~ .close {
+    display: flex;
+  }
+  nav .links-button #check:checked ~ .menu {
     display: none;
   }
   header img {
     height: 100vh;
   }
   .first-section p {
-    width: 70vw;
+    width: 80vw;
   }
 }
 .about-section1 {
@@ -11976,7 +12015,7 @@ nav .btn1:hover {
 }
 
 .about-section2 .title-section2 p {
-  color: rgb(68, 74, 98);
+  color: rgb(68, 68, 68);
   width: 40vw;
 }
 .about-section2 .title-section2 h2, .about-section2 .title-section2 .h2 {
@@ -12024,6 +12063,9 @@ nav .btn1:hover {
 @media (max-width: 430px) {
   .about-section1 {
     flex-direction: column;
+  }
+  .about-section1 video {
+    width: 100%;
   }
   .about-section1 .left-side p {
     padding-inline: 2vw;
@@ -12101,6 +12143,7 @@ nav .btn1:hover {
   color: rgb(255, 160, 18);
 }
 .form-section p {
+  color: rgb(68, 68, 68);
   width: 40vw;
   text-align: center;
   margin: auto;
@@ -12111,7 +12154,7 @@ nav .btn1:hover {
 }
 .form form {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19);
-  padding: 4vh 2vw;
+  padding: 4vh 4vw;
   display: flex;
   flex-direction: column;
   gap: 3vh;
@@ -12219,6 +12262,7 @@ nav .btn1:hover {
     font-weight: 600;
   }
   #gallery p {
+    color: rgb(68, 68, 68);
     width: 95vw;
   }
   .gallerys .gallery-top {
@@ -12309,14 +12353,14 @@ nav .btn1:hover {
   color: white;
 }
 .contact-section .contact-information .location p {
-  color: rgb(122, 115, 133);
+  color: rgb(68, 68, 68);
 }
 .contact-section form {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   flex-direction: column;
   gap: 2vh;
-  padding: 5vh 3vw;
+  padding: 5vh 4vw;
 }
 .contact-section form .inputs {
   display: flex;
