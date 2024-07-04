@@ -47,8 +47,10 @@ nav
     flex-direction: column
     align-items: center
     justify-content: center
+    gap: 2vh
     p
         text-align: center
+        width: 40vw
     h1
         font-family: satisfy
         span
@@ -57,20 +59,35 @@ nav
     .buttons
         display: flex
         align-items: center
-        gap: 2vw
+        gap: 3vw
     .btn2
         background-color: transparent
         color: white
         padding: 7px 1.5vw
         border-radius: 25px
-        border: 1px solid rgb(255, 160, 18)
+        border: 2px solid rgb(255, 160, 18)
         &:hover
             background-color: rgb(255, 176, 59)
     .btn3
         background-color: transparent
         color: white
-        padding: 7px 2vw
+        padding: 7px 4vw
         border-radius: 25px
-        border: 1px solid rgb(255, 160, 18)
+        border: 2px solid rgb(255, 160, 18)
         &:hover
             background-color: rgb(255, 176, 59)
+
+
+@media  ( max-width: 430px )
+    nav
+        .links-button
+            .links
+                display: none
+    header
+        img
+            height: 100vh
+    .first-section
+        p
+            width: 70vw
+ 
+    

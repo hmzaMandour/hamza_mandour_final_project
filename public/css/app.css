@@ -11900,9 +11900,11 @@ nav .btn1:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 2vh;
 }
 .first-section p {
   text-align: center;
+  width: 40vw;
 }
 .first-section h1, .first-section .h1 {
   font-family: satisfy;
@@ -11914,14 +11916,14 @@ nav .btn1:hover {
 .first-section .buttons {
   display: flex;
   align-items: center;
-  gap: 2vw;
+  gap: 3vw;
 }
 .first-section .btn2 {
   background-color: transparent;
   color: white;
   padding: 7px 1.5vw;
   border-radius: 25px;
-  border: 1px solid rgb(255, 160, 18);
+  border: 2px solid rgb(255, 160, 18);
 }
 .first-section .btn2:hover {
   background-color: rgb(255, 176, 59);
@@ -11929,14 +11931,25 @@ nav .btn1:hover {
 .first-section .btn3 {
   background-color: transparent;
   color: white;
-  padding: 7px 2vw;
+  padding: 7px 4vw;
   border-radius: 25px;
-  border: 1px solid rgb(255, 160, 18);
+  border: 2px solid rgb(255, 160, 18);
 }
 .first-section .btn3:hover {
   background-color: rgb(255, 176, 59);
 }
 
+@media (max-width: 430px) {
+  nav .links-button .links {
+    display: none;
+  }
+  header img {
+    height: 100vh;
+  }
+  .first-section p {
+    width: 70vw;
+  }
+}
 .about-section1 {
   background-color: rgb(255, 250, 243);
   display: flex;
@@ -11945,6 +11958,13 @@ nav .btn1:hover {
 }
 .about-section1 .left-side h2, .about-section1 .left-side .h2 {
   font-family: satisfy;
+  color: rgb(95, 89, 80);
+}
+.about-section1 .left-side h2 strong, .about-section1 .left-side .h2 strong {
+  font-family: satisfy;
+}
+.about-section1 .left-side p {
+  color: rgb(132, 132, 132);
 }
 
 .icon-para {
@@ -11955,8 +11975,15 @@ nav .btn1:hover {
   color: rgb(255, 160, 18);
 }
 
+.about-section2 .title-section2 p {
+  color: rgb(68, 74, 98);
+  width: 40vw;
+}
 .about-section2 .title-section2 h2, .about-section2 .title-section2 .h2 {
   font-family: satisfy;
+  color: rgb(95, 89, 80);
+  font-weight: 700;
+  font-size: 35px;
 }
 .about-section2 .title-section2 h2 span, .about-section2 .title-section2 .h2 span {
   color: rgb(255, 176, 59);
@@ -11986,6 +12013,7 @@ nav .btn1:hover {
 }
 .inside-section2 .hover h2, .inside-section2 .hover .h2 {
   font-family: satisfy;
+  color: rgb(95, 89, 80);
 }
 .inside-section2 .hover h3, .inside-section2 .hover .h3 {
   padding-top: 50px;
@@ -11993,6 +12021,27 @@ nav .btn1:hover {
   font-weight: 800;
 }
 
+@media (max-width: 430px) {
+  .about-section1 {
+    flex-direction: column;
+  }
+  .about-section1 .left-side p {
+    padding-inline: 2vw;
+  }
+  .about-section1 .left-side h2, .about-section1 .left-side .h2 {
+    font-size: 35px;
+    padding-inline: 2vw;
+  }
+  .about-section2 .title-section2 p {
+    width: 85vw;
+  }
+  .inside-section2 {
+    flex-direction: column;
+  }
+  .inside-section2 .hover {
+    width: 100%;
+  }
+}
 .event-section-top {
   background-image: url(../img/events-bg.jpg);
   background-position: center;
@@ -12018,6 +12067,11 @@ nav .btn1:hover {
   font-family: satisfy;
 }
 
+@media (max-width: 430px) {
+  .event-section-top {
+    background-attachment: scroll;
+  }
+}
 .form-section h1, .form-section .h1 {
   text-align: center;
   font-family: satisfy;
@@ -12183,6 +12237,9 @@ nav .btn1:hover {
 .contact-section .contact-information .location i:hover {
   background-color: rgb(255, 176, 59);
   color: white;
+}
+.contact-section .contact-information .location p {
+  color: rgb(122, 115, 133);
 }
 .contact-section form {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19);
