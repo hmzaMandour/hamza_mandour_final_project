@@ -14,6 +14,9 @@
         span
             color: rgb(255, 176, 59)
             font-family: satisfy
+.Organization-section
+    display: flex
+    justify-content: space-around
 .left-side
     h3
         color: rgb(255, 176, 59)
@@ -22,5 +25,15 @@
 @media  ( max-width: 430px )
     .event-section-top
         background-attachment: scroll
+        h2
+            font-size: 40px
+        .left.side
+                padding-inline: 2vw
+    .Organization-section
+        flex-direction: column
+        gap: 3vh
+        padding-inline: 3vw
+        img
+            width: 95vw
 
     

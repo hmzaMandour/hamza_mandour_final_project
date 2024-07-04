@@ -12033,7 +12033,7 @@ nav .btn1:hover {
     padding-inline: 2vw;
   }
   .about-section2 .title-section2 p {
-    width: 85vw;
+    width: 95vw;
   }
   .inside-section2 {
     flex-direction: column;
@@ -12062,6 +12062,11 @@ nav .btn1:hover {
   font-family: satisfy;
 }
 
+.Organization-section {
+  display: flex;
+  justify-content: space-around;
+}
+
 .left-side h3, .left-side .h3 {
   color: rgb(255, 176, 59);
   font-family: satisfy;
@@ -12071,17 +12076,34 @@ nav .btn1:hover {
   .event-section-top {
     background-attachment: scroll;
   }
+  .event-section-top h2, .event-section-top .h2 {
+    font-size: 40px;
+  }
+  .event-section-top .left.side {
+    padding-inline: 2vw;
+  }
+  .Organization-section {
+    flex-direction: column;
+    gap: 3vh;
+    padding-inline: 3vw;
+  }
+  .Organization-section img {
+    width: 95vw;
+  }
 }
 .form-section h1, .form-section .h1 {
   text-align: center;
   font-family: satisfy;
+  color: rgb(95, 89, 80);
 }
 .form-section h1 span, .form-section .h1 span {
   font-family: satisfy;
   color: rgb(255, 160, 18);
 }
 .form-section p {
+  width: 40vw;
   text-align: center;
+  margin: auto;
 }
 
 .form {
@@ -12128,9 +12150,32 @@ nav .btn1:hover {
   background-color: rgb(255, 160, 18);
 }
 
+@media (max-width: 430px) {
+  .form-section h1, .form-section .h1 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .form-section p {
+    width: 95vw;
+  }
+  .form-section .form .first-inputs {
+    flex-direction: column;
+    gap: 2vh;
+  }
+  .form-section .form .first-inputs input {
+    width: 90%;
+  }
+  .form-section textarea {
+    width: 90%;
+  }
+  .form-section .btn4 {
+    width: 33vw;
+  }
+}
 #gallery h1, #gallery .h1 {
   text-align: center;
   font-family: satisfy;
+  color: rgb(95, 89, 80);
 }
 #gallery h1 span, #gallery .h1 span {
   font-family: satisfy;
@@ -12138,6 +12183,8 @@ nav .btn1:hover {
 }
 #gallery p {
   text-align: center;
+  margin: auto;
+  width: 40vw;
 }
 
 .gallerys {
@@ -12166,6 +12213,22 @@ nav .btn1:hover {
   transform: scale(1.07);
 }
 
+@media (max-width: 430px) {
+  #gallery h1, #gallery .h1 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  #gallery p {
+    width: 95vw;
+  }
+  .gallerys .gallery-top {
+    flex-direction: column;
+    padding-inline: 3vw;
+  }
+  .gallerys .gallery-top .gallery-img {
+    width: 100%;
+  }
+}
 .chef-information {
   display: flex;
   flex-direction: column;
@@ -12183,16 +12246,22 @@ nav .btn1:hover {
   text-align: center;
 }
 .chef-information h5, .chef-information .h5 {
+  width: 75vw;
   text-align: center;
 }
 
 .background-img {
-  padding: 5vh 0;
+  padding: 8vh 0;
   background-image: url(../img/testimonials-bg.jpg);
   background-position: center;
   background-size: cover;
 }
 
+@media (max-width: 430px) {
+  .chef-information h5, .chef-information .h5 {
+    width: 98vw;
+  }
+}
 .second-form-section {
   padding-inline: 3vw;
   display: flex;
@@ -12209,27 +12278,28 @@ nav .btn1:hover {
   color: rgb(255, 176, 59);
 }
 .contact-section .para {
+  width: 40vw;
   text-align: center;
+  margin: auto;
 }
 .contact-section div .map {
   width: 100%;
   height: 60vh;
 }
 .contact-section .contact-information {
-  padding-inline: 3vw;
+  padding: 5vh 3vw;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 }
 .contact-section .contact-information .location {
   display: flex;
   align-items: start;
-  gap: 1vw;
+  gap: 2vw;
 }
 .contact-section .contact-information .location i {
   color: rgb(255, 176, 59);
-  background-color: rgb(211, 207, 202);
+  background-color: rgb(255, 246, 232);
   border-radius: 50%;
   padding: 3px 6px;
   font-size: large;
@@ -12246,7 +12316,7 @@ nav .btn1:hover {
   display: flex;
   flex-direction: column;
   gap: 2vh;
-  padding-inline: 3vw;
+  padding: 5vh 3vw;
 }
 .contact-section form .inputs {
   display: flex;
@@ -12254,7 +12324,7 @@ nav .btn1:hover {
 }
 .contact-section form .inputs input {
   border: 1px solid rgb(222, 226, 230);
-  width: 50%;
+  width: 100%;
   padding: 7px 7px;
 }
 .contact-section form .inputs input::placeholder {
@@ -12269,14 +12339,13 @@ nav .btn1:hover {
   color: rgb(89, 92, 95);
 }
 .contact-section form .btn5 {
-  width: 12vw;
   text-align: center;
   margin: auto;
   background-color: rgb(255, 176, 59);
   color: white;
   border: none;
   border-radius: 20px;
-  padding: 7px 0;
+  padding: 7px 15px;
 }
 .contact-section form .btn5:hover {
   background-color: rgb(255, 160, 18);
@@ -12290,6 +12359,18 @@ nav .btn1:hover {
   color: rgb(89, 92, 95);
 }
 
+@media (max-width: 430px) {
+  .contact-section .para {
+    width: 95vw;
+  }
+  .contact-information {
+    flex-direction: column;
+    justify-content: start;
+  }
+  form .inputs {
+    flex-direction: column;
+  }
+}
 footer {
   background-color: rgb(53, 50, 45);
   color: white;
@@ -12328,6 +12409,18 @@ footer p {
 footer p span {
   color: rgb(255, 176, 59);
   cursor: pointer;
+}
+
+@media (max-width: 430px) {
+  footer p {
+    width: 95vw;
+  }
+  footer .footer-icons {
+    gap: 2vw;
+  }
+  footer .footer-icons i {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
