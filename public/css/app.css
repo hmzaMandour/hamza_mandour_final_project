@@ -11851,12 +11851,6 @@ textarea.form-control-lg {
   font-family: sans-serif;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  gap: 10vh;
-}
-
 @font-face {
   font-family: satisfy;
   src: url(../fonts/Satisfy-Regular.ttf);
@@ -11976,30 +11970,25 @@ nav .btn1:hover {
   padding-inline: 4vw;
 }
 .inside-section2 .hover {
+  height: 40vh;
   width: 33vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19);
-  padding: 60px 40px;
-  overflow: hidden;
-  position: relative;
+  padding-inline: 40px;
 }
-.inside-section2 .hover .hoverr {
-  width: 100%;
-  transition: 0.2s;
-  overflow: hidden;
-  position: relative;
-}
-.inside-section2 .hover .hoverr:hover {
+.inside-section2 .hover:hover {
   background-color: rgb(255, 176, 59);
   color: white;
-  transform: scale(1.083);
 }
-.inside-section2 .hover .hoverr:hover h3, .inside-section2 .hover .hoverr:hover .h3 {
+.inside-section2 .hover:hover h3, .inside-section2 .hover:hover .h3 {
+  padding-top: 30px;
+  transition: 0, 5s;
   color: white;
 }
 .inside-section2 .hover h2, .inside-section2 .hover .h2 {
   font-family: satisfy;
 }
 .inside-section2 .hover h3, .inside-section2 .hover .h3 {
+  padding-top: 50px;
   color: rgb(255, 176, 59);
   font-weight: 800;
 }
@@ -12060,16 +12049,16 @@ nav .btn1:hover {
   border: 1px solid rgb(222, 226, 230);
   padding: 7px 7px;
 }
-.form .first-inputs input:focus {
-  border: 1px solid blue;
-}
 .form .first-inputs input::placeholder {
-  color: black;
+  color: rgb(89, 92, 95);
 }
 .form textarea {
   padding: 4vh 1vw;
   width: 100%;
   border: 1px solid rgb(222, 226, 230);
+}
+.form textarea::placeholder {
+  color: rgb(89, 92, 95);
 }
 .form .btn4 {
   width: 12vw;
@@ -12121,6 +12110,127 @@ nav .btn1:hover {
 }
 .gallerys .gallery-top img:hover {
   transform: scale(1.07);
+}
+
+.chef-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.chef-information .jhon {
+  border-radius: 50%;
+  width: 90px;
+  border: 5px solid grey;
+}
+.chef-information p {
+  font-size: small;
+  text-align: center;
+}
+.chef-information h5, .chef-information .h5 {
+  text-align: center;
+}
+
+.background-img {
+  padding: 5vh 0;
+  background-image: url(../img/testimonials-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.second-form-section {
+  padding-inline: 3vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.contact-section h2, .contact-section .h2 {
+  font-family: satisfy;
+  text-align: center;
+}
+.contact-section h2 span, .contact-section .h2 span {
+  font-family: satisfy;
+  color: rgb(255, 176, 59);
+}
+.contact-section .para {
+  text-align: center;
+}
+.contact-section div .map {
+  width: 100%;
+  height: 60vh;
+}
+.contact-section .contact-information {
+  padding-inline: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+}
+.contact-section .contact-information .location {
+  display: flex;
+  align-items: start;
+  gap: 1vw;
+}
+.contact-section .contact-information .location i {
+  color: rgb(255, 176, 59);
+  background-color: rgb(211, 207, 202);
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: large;
+}
+.contact-section .contact-information .location i:hover {
+  background-color: rgb(255, 176, 59);
+  color: white;
+}
+.contact-section form {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding-inline: 3vw;
+}
+.contact-section form .inputs {
+  display: flex;
+  gap: 2vw;
+}
+.contact-section form .inputs input {
+  border: 1px solid rgb(222, 226, 230);
+  width: 50%;
+  padding: 7px 7px;
+}
+.contact-section form .inputs input::placeholder {
+  color: rgb(89, 92, 95);
+}
+.contact-section form .input-subject input {
+  padding: 7px 7px;
+  border: 1px solid rgb(222, 226, 230);
+  width: 100%;
+}
+.contact-section form .input-subject input::placeholder {
+  color: rgb(89, 92, 95);
+}
+.contact-section form .btn5 {
+  width: 12vw;
+  text-align: center;
+  margin: auto;
+  background-color: rgb(255, 176, 59);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 7px 0;
+}
+.contact-section form .btn5:hover {
+  background-color: rgb(255, 160, 18);
+}
+.contact-section form textarea {
+  padding: 4vh 1vw;
+  width: 100%;
+  border: 1px solid rgb(222, 226, 230);
+}
+.contact-section form textarea::placeholder {
+  color: rgb(89, 92, 95);
 }
 
 /*# sourceMappingURL=app.css.map */
