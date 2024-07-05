@@ -15,10 +15,20 @@
         width: 75vw
         text-align: center
 .background-img
-    padding: 8vh 0
+    padding: 10vh 0
     background-image: url(../img/testimonials-bg.jpg)
     background-position: center
     background-size: cover
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width:100%
+        background: #000
+        opacity: 0.3
 
 @media  ( max-width: 430px )
     .chef-information
