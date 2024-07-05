@@ -12014,6 +12014,9 @@ nav .btn1:hover {
   color: rgb(255, 160, 18);
 }
 
+.about-section2 {
+  padding-top: 10vh;
+}
 .about-section2 .title-section2 p {
   color: rgb(68, 68, 68);
   width: 40vw;
@@ -12094,12 +12097,25 @@ nav .btn1:hover {
   gap: 3vh;
   color: white;
   padding: 10vh 0;
+  position: relative;
 }
-.event-section-top h2, .event-section-top .h2 {
+.event-section-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.4;
+}
+.event-section-top h1, .event-section-top .h1 {
   text-align: center;
   font-family: satisfy;
+  color: white;
+  font-weight: 700;
 }
-.event-section-top h2 span, .event-section-top .h2 span {
+.event-section-top h1 span, .event-section-top .h1 span {
   color: rgb(255, 176, 59);
   font-family: satisfy;
 }
@@ -12133,10 +12149,14 @@ nav .btn1:hover {
     width: 95vw;
   }
 }
+.form-section {
+  padding-top: 10vh;
+}
 .form-section h1, .form-section .h1 {
   text-align: center;
   font-family: satisfy;
   color: rgb(95, 89, 80);
+  font-weight: 700;
 }
 .form-section h1 span, .form-section .h1 span {
   font-family: satisfy;
@@ -12215,10 +12235,17 @@ nav .btn1:hover {
     width: 33vw;
   }
 }
+#gallery {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
 #gallery h1, #gallery .h1 {
   text-align: center;
   font-family: satisfy;
   color: rgb(95, 89, 80);
+  font-weight: 700;
 }
 #gallery h1 span, #gallery .h1 span {
   font-family: satisfy;
@@ -12308,11 +12335,18 @@ nav .btn1:hover {
 }
 .second-form-section {
   padding-inline: 3vw;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
   display: flex;
   flex-direction: column;
   gap: 2vh;
 }
 
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
 .contact-section h2, .contact-section .h2 {
   font-family: satisfy;
   text-align: center;
@@ -12403,6 +12437,10 @@ nav .btn1:hover {
   color: rgb(89, 92, 95);
 }
 
+#contact-us {
+  padding-top: 10vh;
+}
+
 @media (max-width: 430px) {
   .contact-section .para {
     width: 95vw;
@@ -12467,17 +12505,19 @@ footer p span {
   }
 }
 .Check-our-Specials {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   display: flex;
   flex-direction: column;
   gap: 3vh;
 }
-.Check-our-Specials .h2 {
-  font-family: satisfy;
+.Check-our-Specials .h1 {
   text-align: center;
-  font-weight: 600;
+  font-family: satisfy;
   color: rgb(95, 89, 80);
+  font-weight: 700;
 }
-.Check-our-Specials .h2 span {
+.Check-our-Specials .h1 span {
   font-family: satisfy;
   color: rgb(255, 176, 59);
 }
@@ -12490,6 +12530,20 @@ footer p span {
   color: rgb(95, 89, 80);
   font-family: satisfy;
   font-weight: 600;
+}
+
+.menu-tasty {
+  padding-top: 10vh;
+}
+.menu-tasty h1, .menu-tasty .h1 {
+  text-align: center;
+  font-family: satisfy;
+  color: rgb(95, 89, 80);
+  font-weight: 700;
+}
+.menu-tasty h1 span, .menu-tasty .h1 span {
+  color: rgb(255, 176, 59);
+  font-family: satisfy;
 }
 
 @media (max-width: 430px) {

@@ -15,8 +15,8 @@
           <div class="links">
             <a class="a1" href="">Home</a>
             <a class="a1" href="#about">About</a>
-            <a class="a1" href="">Menu</a>
-            <a class="a1" href="">Specials</a>
+            <a class="a1" href="#menu">Menu</a>
+            <a class="a1" href="#special">Specials</a>
             <a class="a1" href="#events">Events</a>
             <a class="a1" href="">Chefs</a>
             <a class="a1" href="#gallery">Gallery</a>
@@ -234,25 +234,148 @@
       </div>
     </div>
 
-    <div id="menu">
+    <div id="menu" class="d-flex flex-column gap-5 menu-tasty ">
+      <h1>Check our tasty <span>Menu</span></h1>
+      <ul class="nav gap-3    justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link nav-item btn btn-outline-warning border border-2 border-warning text-black rounded-pill filter-btn link-secondary active " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Show All</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link btn btn-outline-warning border border-2 border-warning text-black rounded-pill filter-btn link-secondary" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Starters</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link btn btn-outline-warning border border-2 border-warning text-black rounded-pill filter-btn link-secondary" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Salads</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link btn btn-outline-warning border border-2 border-warning text-black rounded-pill filter-btn link-secondary" id="pills-settings-tab" data-bs-toggle="pill" data-bs-target="#pills-settings" type="button" role="tab" aria-controls="pills-settings" aria-selected="false">Speciality</button>
+        </li>
+      </ul>
+      <div class="tab-content " id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="d-lg-flex ps-3    justify-content-evenly">
+            <div class="d-flex flex-column gap-4">
+              <div class="d-flex gap-5">
+                <h5 class="text-warning">Lobster Bisque <br><span class="fs-6 text-secondary">Lorem, deren, trataro, filede, nerada.</span></h5>
+                <h5>$5.95</h5>
+              </div>
+              <div class="d-flex gap-5">
+                <h5 class="text-warning">Crob cake <br><span class="fs-6 text-secondary">Lorem, deren, trataro, filede, nerada</span></h5>
+                <h5>$7.95</h5>
+              </div>
+              <div class="d-flex gap-5">
+                <h5 class="text-warning">Tuscan Grilled <br><span class="fs-6 text-secondary">Lorem, deren, trataro, filede, nerada</span></h5>
+                <h5>$9.95</h5>
+              </div>
+              <div class="d-flex gap-5"> 
+                <h5 class="text-warning">Greek salad <br><span class="fs-6 text-secondary">Lorem, deren, trataro, filede, nerada</span></h5>
+                <h5>$9.95</h5>
+              </div>
+              <div class="d-flex gap-5">
+                <h5 class="text-warning">Lobster roll <br><span class="fs-6 text-secondary">Lorem, deren, trataro, filede, nerada</span></h5>
+                <h5>$12.95</h5>
+              </div>
+            </div>
+            <div class="d-flex flex-column gap-4">
+              <div class="d-flex gap-5">
+                <h5 class="text-warning">Bread barrel <br><span class="fs-6 text-secondary">Lorem, deren, trataro, filede, nerada</span></h5>
+                <h5>$6.95</h5>
+              </div>
+              <div class="d-flex gap-5">
+                <h5 class="text-warning">Caesar selections <br><span class="fs-6 text-secondary">Lorem, deren, trataro, filede, nerada</span></h5>
+                <h5>$8.95</h5>
+              </div>
+              <div class="d-flex gap-5">
+                <h5 class="text-warning">Mazzarella stick <br><span class="fs-6 text-secondary">Lorem, deren, trataro, filede, nerada</span></h5>
+                <h5>$4.95</h5>
+              </div>
+              <div class="d-flex gap-5">
+                <h5 class="text-warning">Spinach salad <br><span class="fs-6 text-secondary">Lorem, deren, trataro, filede, nerada</span></h5>
+                <h5>$9.95</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="d-lg-flex ps-3  justify-content-evenly">
+            <div>
+              <div class="d-flex gap-5">
+                <h5 class="text-warning">Lobster Bisque <br><span class="fs-6 text-secondary">Lorem, deren, trataro, filede, nerada.</span></h5>
+                <h5>$5.95</h5>
+              </div>
+              <div class="d-flex gap-5">
+                <h5 class="text-warning">Mazzarella stick <br><span class="fs-6 text-secondary">Lorem, deren, trataro, filede, nerada</span></h5>
+                <h5>$4.95</h5>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex gap-5">
+                <h5 class="text-warning">Crob cake <br><span class="fs-6 text-secondary">Lorem, deren, trataro, filede, nerada</span></h5>
+                <h5>$7.95</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class="d-lg-flex ps-3  justify-content-evenly">
+            <div>
+              <div class="d-flex gap-5">
+                <h5 class="text-warning">Caesar selections <br><span class="fs-6 text-secondary">Lorem, deren, trataro, filede, nerada</span></h5>
+                <h5>$8.95</h5>
+              </div>
+              <div class="d-flex gap-5">
+                <h5 class="text-warning">Spinach salad <br><span class="fs-6 text-secondary">Lorem, deren, trataro, filede, nerada</span></h5>
+                <h5>$9.95</h5>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex gap-5"> 
+                <h5 class="text-warning">Greek salad <br><span class="fs-6 text-secondary">Lorem, deren, trataro, filede, nerada</span></h5>
+                <h5>$9.95</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-settings" role="tabpanel" aria-labelledby="pills-settings-tab"><div class="d-lg-flex ps-3 justify-content-evenly">
+          <div>
+            <div class="d-flex gap-5">
+              <h5 class="text-warning">Bread barrel <br><span class="fs-6 text-secondary">Lorem, deren, trataro, filede, nerada</span></h5>
+              <h5>$6.95</h5>
+            </div>
+            <div class="d-flex gap-5">
+              <h5 class="text-warning">Lobster roll <br><span class="fs-6 text-secondary">Lorem, deren, trataro, filede, nerada</span></h5>
+              <h5>$12.95</h5>
+            </div>
+          </div>
+          <div>
+            <div class="d-flex gap-5">
+              <h5 class="text-warning">Tuscan Grilled <br><span class="fs-6 text-secondary">Lorem, deren, trataro, filede, nerada</span></h5>
+              <h5>$9.95</h5>
+            </div>
+          </div>
+        </div></div>
+      </div>
+  
+    </div>
+
+    <div id="special">
       <div class="Check-our-Specials">
-        <h2 class="h2" >Check our <span >Special</span></h2>
+        <h1 class="h1" >Check our <span >Special</span></h1>
         <p class="p" >Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
     
         <div class="d-lg-flex  ps-5   gap-5 align-items-start">
-          <div class="nav flex-column gap-3    nav-pills ps-4" id="v-pills-tab" role="tablist"      aria-orientation="vertical">
-            <a class=" text-decoration-none text-black w-100  link-warning active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="link" role="tab" aria-controls="v-pills-home" aria-selected="true">Madi sit est</a>
-            <a class=" text-decoration-none text-black w-100 link-warning" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="link" role="tab" aria-controls="v-pills-profile" aria-selected="false">Unde praesentium sed</a>
-            <a class=" text-decoration-none text-black w-100 link-warning" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="link" role="tab" aria-controls="v-pills-messages" aria-selected="false">Pariatur explicabo</a>
-            <a class=" text-decoration-none text-black w-100 link-warning" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="link" role="tab" aria-controls="v-pills-settings" aria-selected="false">nostrum qui quasi</a>
+          <div class="nav flex-column gap-4 w-50 pt-3   nav-pills ps-4" id="v-pills-tab" role="tablist"      aria-orientation="vertical">
+            <a class=" text-decoration-none text-black  link-warning active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="link" role="tab" aria-controls="v-pills-home" aria-selected="true">Madi sit est</a>
+            <a class=" text-decoration-none text-black link-warning" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="link" role="tab" aria-controls="v-pills-profile" aria-selected="false">Unde praesentium sed</a>
+            <a class=" text-decoration-none text-black link-warning" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="link" role="tab" aria-controls="v-pills-messages" aria-selected="false">Pariatur explicabo</a>
+            <a class=" text-decoration-none text-black link-warning" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="link" role="tab" aria-controls="v-pills-settings" aria-selected="false">nostrum qui quasi</a>
           </div>
           <div class="tab-content" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
               <div class="d-lg-flex  g-3  ">
                 <div class="for-font">
                   <h3>Architecto ut aperiam autem id</h3>
-                  <p class="w-50 text-start">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                  <p class="w-75 text-start">Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                  <p class=" text-start">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                  <p class=" text-start">Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
                 </div>
                 <img width="250" src="./public/img/specials-1.jpg" alt=""> 
               </div>
@@ -261,8 +384,8 @@
               <div class="d-lg-flex  g-2 ">
                 <div class="for-font" >
                   <h3>Et blanditiis nemo veritatis excepturi</h3>
-                  <p class="w-50">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                  <p class="w-75">Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                  <p class="">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                  <p class="">Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
                 </div>
                 <img width="250" src="./public/img/specials-2.jpg" alt=""> 
               </div>
@@ -271,8 +394,8 @@
               <div class="d-lg-flex  g-2 ">
                 <div class="for-font">
                   <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                  <p class="w-50">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                  <p class="w-75">Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                  <p class="">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                  <p class="">Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
                 </div>
                 <img width="250" src="./public/img/specials-3.jpg" alt=""> 
               </div>
@@ -280,8 +403,8 @@
             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">     <div class="d-lg-flex  g-2 ">
               <div class="for-font">
                 <h3 class="w-75">Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                <p class="w-50">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                <p class="w-75">Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                <p class="">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                <p class="">Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
               </div>
               <img width="250" src="./public/img/specials-4.jpg" alt=""> 
             </div></div>
@@ -293,9 +416,10 @@
 
     <div id="events">
       <div class="event-section-top">
-        <h2 >Organize Your <span>Events</span> in our Restaurant</h2>
+        
         <div class=" " >
           <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <h1 class="pb-3">Organize Your <span>Events</span> in our Restaurant</h1>
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -634,7 +758,7 @@
    
     
 
-  <div class="d-flex flex-column align-items-center justify-content-center align-items-start">
+  <!-- <div class="d-flex flex-column align-items-center justify-content-center align-items-start">
     <div class="nav d-flex  nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
       <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
       <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
@@ -647,10 +771,10 @@
       <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">ccc</div>
       <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">ddd</div>
     </div>
-  </div>
+  </div> -->
 
    
-<div class="d-flex  justify-content-evenly">
+<!-- <div class="d-flex  justify-content-evenly">
   <div class="d-flex flex-column gap-4">
     <div class="d-flex gap-5">
       <h5>Lobster Bisque <br><span class="fs-6">Lorem, deren, trataro, filede, nerada.</span></h5>
@@ -691,23 +815,10 @@
       <h5>$9.95</h5>
     </div>
   </div>
-</div>
+</div> -->
 
 
-<div class="d-flex align-items-start">
-  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
-    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
-  </div>
-  <div class="tab-content" id="v-pills-tabContent">
-    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">..qqqq.</div>
-    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">.ssss..</div>
-    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">.dddd..</div>
-    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...vvvv</div>
-  </div>
-</div>
+
 
     <!-- <div class="chef-information">
         <img class="jhon" src="./public/img/testimonials/testimonials-1.jpg" alt="">
@@ -716,8 +827,17 @@
         <img src="./public/img/stars.PNG" alt="">
         <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta quos temporibus vero deserunt <br> sunt soluta quos temporibus vero deserunt sunt!</h5>
     </div> -->
+
+
+   
+
+    
     
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
   </body>
 </html>
 
